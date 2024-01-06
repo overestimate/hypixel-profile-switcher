@@ -38,7 +38,7 @@ public class HypixelProfileSwitcher {
     public static String lastSetProfile = "";
 
     public static void profileSwitch(String profileNameFromConfig, LocrawInfo.GameType mode) {
-        if (profileNameFromConfig == "") {
+        if (profileNameFromConfig.equals("")) {
             return;
         }
         HypixelProfileSwitcher.lastKnownMode = mode; // set it here to ingore non-changes (ie limbo to lobby)
